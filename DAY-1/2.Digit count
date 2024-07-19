@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include<math.h>
+int main(){
+    int n,count,rem;
+    scanf("%d",&n);// or log10(n)+1;
+    while(n!=0){
+        rem=n%10;
+        n/=10;
+        count++;
+    }
+    printf("%d",count);
+    return 0;
+}
